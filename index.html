@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aabshaar Shaikh Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+	
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.portfolio-section {
+  background-color: #000000; /* Light gray background color */
+
+  padding: 20px; /* Example: add padding */
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Aabshaar Shaikh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+			  <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+			  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About Me</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+			  <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/img1.jpeg); width: 550px; max-height: 650px; background-color: orange; box-shadow: 0 0 10px 10px #ffc107; background-size: cover; background-position: center; overflow: hidden;">
+					<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Aabshaar Shaikh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						'Business Analyst  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<h2>Aspiring Data Analyst & Business Analyst | Seeing Entry-Level Data/Business Analyst Opportunites to Kickstart Career</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a>  -->
+							<a href="https://github.com/AabshaarShaikh20" class="" style="background-color: orange; color: white; border: 5px solid orange; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">My works</a>
+						</div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+			<div class="container">
+				<div class="row">
+					<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+						<div class="col-md-6 col-lg-5 d-flex">
+							<div class="img-about img d-flex align-items-stretch">
+								<div class="overlay">
+									<div class="row">
+										<div class="col-sm-6 col-md-5">
+										  <div class="about-img">
+											<img src="images/photograph.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										  </div>
+										</div>
+										<!-- Details next to profile image -->
+										<div class="col-sm-6 col-md-7">
+										  <div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Aabshaar Shaikh</span></p>
+											<p><span class="title-s">Job Role: </span> <span> Student</span></p>
+											<!-- <p><span class="title-s">Previous Company: </span> <span>Johnson Controls</span></p>
+											<p><span class="title-s">Domain: </span> <span> Project Mnagement</span></p> -->
+											<p><span class="title-s">Experience: </span> <span>7 Months </span></p>
+											<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
+										  </div>
+										</div>
+									  </div>
+	                                <br>
+									<div class="skill-mf">
+										<p class="title-s">Skills</p>
+										<span>SQL</span> <span class="pull-right"> -80%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+										
+										<span>Python</span> <span class="pull-right"> -70%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+										
+										<span>Machine Learning</span> <span class="pull-right"> -70%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+	
+										<span>Power BI</span> <span class="pull-right"> -60%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div> 
+	
+										<span>Tableau</span> <span class="pull-right"> -50%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div> 
+										
+										<span>Excel</span> <span class="pull-right"> -50%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+							<div class="row justify-content-start pb-3">
+								<div class="col-md-12 heading-section ftco-animate">
+									
+									<h1 class="big">About</h1>
+									<h2 class="mb-4">About Me</h2>
+									
+									<p>Hello! I'm Aabshaar Shaikh, a recent graduate with a strong interest in data & business analysis and a passion for turning raw data into meaningful insights. 
+										As a newcomer to the field, I am eager to apply my knowledge, analytical skills and learn from experienced professionals to contribute effectively to 
+										data-driven decision-making processes..</p>
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<!-- <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+										<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
+	
+										<li class="d-flex"><span>Education:</span> <span>BTech in Computer Science and Engineering</span></li>
+										<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+										<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>-->
+										<li class="d-flex"><span>Other Skills:</span> <span>Project Management, Time Management, Communication Skills, Teamwork and Collaboration</span></li> 
+										<li class="d-flex"><span>Hobbies:</span> <span>Traveling, Reading Books, Journaling</span></li>
+										
+									</ul>
+								</div>
+							</div>
+	
+	
+							<div class="counter-wrap ftco-animate d-flex mt-md-3">
+								<div class="text">
+									<p class="mb-4">
+										<span class="number" data-number="10">0</span> <span>+</span>
+										<span>&nbsp; Projects completed</span>
+									</p>
+									<p><a href="https://www.linkedin.com/in/aabshaar-shaikh-046572261" class="background-color", style="background-color: orange; color: white; border: 2px solid orange; box-shadow: 0 0 5px 5px #ffc107; text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">LinkedIn</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	
+		<section class="ftco-section ftco-no-pb" id="education-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+					 <div class="col-md-10 heading-section text-center ftco-animate">
+						<h1 class="big big-2">Education</h1>
+						<h2 class="mb-4">Education</h2>
+						<br>
+			
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2023-2024</span>
+							<h2>Post Graduate Program in Data Science and Analytics</h2>
+							<span class="position">Imarticus Learn</span>
+							<p class="mt-4">Grade: 80.94%</p> 
+						</div>
+					</div>
+	
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2020-2023</span>
+							<h2>BTech in Computer Science and Engineering</h2>
+							<span class="position">DY Patil International University</span>
+							<p class="mt-4">Grade: First class distinction. 80.07%</p>
+						</div>
+					</div>
+	
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2017-2020</span>
+							<h2>Diploma in Information Technology</h2>
+							<span class="position">Pimpri Chinchwad Polytechnic</span>
+							<p class="mt-4">Grade: First class distinction. 87.56%</p>
+						</div>
+					</div>
+				
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2017</span>
+							<h2>St. Ursula High School</h2>
+							<span class="position">SSC</span>
+							<p class="mt-4">Board: SSC</p>
+						</div>
+					</div>
+				</div>
+	
+	
+	
+	
+		<section class="ftco-section ftco-no-pb" id="experience-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+			  <div class="col-md-10 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Experience</h1>
+				<h2 class="mb-4">Experience</h2>
+				<br>
+				
+				<div class="row">
+					<div class="col-md-06">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Jan 2023 - June 2023</span>
+							<h2>Project Management Intern</h2>
+							<span class="position">Johnson Controls</span>
+							<p class="mt-4">Johnson Controls is a global leader in building technologies and solutions, specializing in innovative products and services for smart buildings and efficient energy management across diverse sectors. They are known for their commitment to sustainability and enhancing operational efficiency through advanced technology solutions.
+								<ul>
+								  <li>Designed and delivered PowerPoint presentations for project meetings, incorporating visual data analytics and key performance indicators; enhanced understanding of project progress and facilitated seamless updates during bi-weekly meetings.</li>
+								  <li>Contributed to project planning and documentation by creating detailed project reports, status updates, and meeting minutes, ensuring accurate and timely communication.</li>
+								  <li>Engaged with cross-functional teams to facilitate communication, thereby enhancing project efficiency and team collaborations.</li>
+								  <li>Updated the Teams and Project SharePoint sites with project team updates and artifacts</li>
+								  <li>Utilized project management tools and software to monitor progress, manage resources, and generate performance metrics.</li>
+								</ul>
+							</p>
+							  
+							  
+						</div>
+	
+					</div>
+	
+					<div class="col-md-06">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">May 2024 - June 2024</span>
+							<h2>Data Science Internship</h2>
+							<span class="position">Codsoft</span>
+							<p class="mt-4">Codsoft is a versatile software development company known for its tailored solutions across various industries. They specialize in creating custom software applications that meet specific business needs, emphasizing innovation and efficiency in their approach. 
+								<ul>
+									<li>Developed training modules</li>
+									<li>Completing assigned tasks</li>
+								</ul>
+							</p>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+			  <div class="col-md-10 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Resume</h1>
+				<h2 class="mb-4">Resume</h2>
+				<!-- <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p> -->
+	
+				<div class="row justify-content-center mt-5">
+					<div class="col-md-6 text-center ftco-animate">
+						<p><a href="https://drive.google.com/file/d/18pQOwEPIeIMV-Gg54zy_J4cBH-RFWMS_/view" class="btn btn-primary py-4 px-5" style="box-shadow: 0 0 10px 5px #ffc107;">Download Resume</a></p>
+					</div>
+				</div>
+	
+			  </div>
+			</div>
+		</section>
+	
+	   
+	
+		<section class="ftco-section" id="project-section">
+		  <div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+			  <div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Projects</h1>
+				<h2 class="mb-4">Projects</h2>
+				<p>Below are the sample Data Science & Analytics projects</p>
+			  </div>
+			</div>
+	
+			<!--  -->
+			<div class="row d-flex">
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/AabshaarShaikh20/Energy-Consumption-Prediction-for-Smart-Buildinngs" class="block-20 zoom-effect" style="background-image: url('images/smartbuildings.jpg');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/AabshaarShaikh20/Energy-Consumption-Prediction-for-Smart-Buildinngs">Energy Consumption Prediction For Smart Buildings</a></h3>
+					<p>This project aims to predict energy usage and provide insights to optimize energy consumption and to help homeowners & building managers, to make informed decisions, reduce energy costs, and to promote sustainability.
+					</p>
+				  </div>
+				</div>
+			  </div>
+	
+			  <!--  -->
+			  <div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/AabshaarShaikh20/Credit-Card-Fraud-Detecton-Machine-Learning-Project" class="block-20 zoom-effect" style="background-image: url('images/CreditCardFraudDetection.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+	
+				  <h3 class="heading"><a href="https://github.com/AabshaarShaikh20/Credit-Card-Fraud-Detecton-Machine-Learning-Project.git">Credit Card Fraud Detection</a></h3>
+				  <p>The main aim of this project is to detect the fraudulent transactions made by credit cards by the use of machine learning techniques, to stop fraudsters from the unauthorized usage of customers accounts.</p>
+				</div>
+			  </div>
+			</div>
+	
+			<!--  -->
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/AabshaarShaikh20/Shoes-Classification-Project.git" class="block-20 zoom-effect" style="background-image: url('images/shoesclassification.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+	
+				  <h3 class="heading"><a href="https://github.com/AabshaarShaikh20/Shoes-Classification-Project.git">Shoes Classification with Convolutional Neural Network</a></h3>
+				  <p>This project focuses on classifying different types of shoes using a Convolutional Neural Network (CNN). The goal is to achieve high accuracy in shoe classification and provide correct predictions through deep learning techniques. </p>
+				</div>
+			  </div>
+			</div>
+	
+			<!--  -->
+			<div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/AabshaarShaikh20/Indian-Road-Accident-Analysis-PowerBi-Project.git" class="block-20 zoom-effect" style="background-image: url('images/PowerBi_IndianRoadAccidentAnalysis.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/AabshaarShaikh20/Indian-Road-Accident-Analysis-PowerBi-Project.git">Indian Road Accident Analysis</a></h3>
+					<p>The objective of this project is to analyze the patterns and causes of road accidents in India to identify key areas for improvement and enhance road safety.</p>
+				  </div>
+				</div>
+			</div>
+	
+			<!--  -->
+			<div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry">
+				  <a href="https://github.com/AabshaarShaikh20/HR-Analytics-Dashboard-PowerBi-Project.git" class="block-20 zoom-effect" style="background-image: url('images/PowerBi_HrAnalyticsDashboard.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/AabshaarShaikh20/HR-Analytics-Dashboard-PowerBi-Project.git">Hr Analytics Dashboard</a></h3>
+					<p>This dashboard provides a comprehensive analysis of employee attrition, highlighting critical metrics and trends to help organizations improve retention strategies.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</section>
+	
+	
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">  
+			<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+				  <!-- <div class="container"> -->
+					  <div class="row justify-content-center">
+						  <div class="col-md-7 ftco-animate text-center">
+							  <h2>More projects on<span> Github  </span> </h2>
+							  <div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+							  <br>
+							  <p><a href="https://github.com/AabshaarShaikh20" class="btn btn-primary py-3 px-5" style="box-shadow: 0 0 4px 4px #ffc107;">GitHub</a></p>
+							  </div>
+						  </div>
+					  </div>
+				  <!-- </div> -->
+			    </div>
+				<br>
+				<br>
+		</section>
+	  
+	  
+	
+	
+	
+	
+	
+		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-5">
+				  <div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Interest</h1>
+					<h2 class="mb-4">My Area Of Interest Are</h2>
+				  </div>
+				</div>
+		  <div class="container">
+			<div class="row d-md-flex align-items-center">
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				<div class="block-18" style="box-shadow: 0 0 4px 4px #ffc107;">
+				  <div class="text">
+					<span>Data Analyst</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				<div class="block-18" style="box-shadow: 0 0 4px 4px #ffc107;">
+				  <div class="text">
+					<span>Business Analyst</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				<div class="block-18" style="box-shadow: 0 0 4px 4px #ffc107;">
+				  <div class="text">
+					<span>Data/Machine Learning Engineering</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				<div class="block-18" style="box-shadow: 0 0 4px 4px #ffc107;">
+				  <div class="text">
+					<span>Project Coordinator</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
+	
+	
+	
+	
+		<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		  <div class="container">
+			  <div class="row justify-content-center mb-5 pb-3">
+			  <div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Contact</h1>
+				<h2 class="mb-4">Contact Me</h2>
+				<p>Below are the details to reach out to me!</p>
+			  </div>
+			</div>
+	
+			<div class="row d-flex contact-info mb-5" >
+			  <div class="col-md-6 col-lg-3 d-flex ftco-animate" >
+				  <div class="align-self-stretch box p-4 text-center">
+					  <div class="icon d-flex align-items-center justify-content-center" style="background-color: orange; color: white; border: 20px solid orange; box-shadow: 0 0 3px 3px #ffc107; text-decoration: none; display: inline-block; border-radius: 100px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+						  <span class="icon-map-signs" style="background-color: orange; color: white; border: 5px solid orange; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;" ></span></span>
+					  </div>
+					  <h3 class="mb-4">Address</h3>
+					<p>Pune, India</p>
+				  </div>
+			  </div>
+			  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				  <div class="align-self-stretch box p-4 text-center">
+					  <div class="icon d-flex align-items-center justify-content-center" style="background-color: orange; color: white; border: 20px solid orange; box-shadow: 0 0 3px 3px #ffc107; text-decoration: none; display: inline-block; border-radius: 100px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+						  <span class="icon-phone2" style="background-color: orange; color: white; border: 5px solid orange; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;"></span>
+					  </div>
+					  <h3 class="mb-4">Contact Number</h3>
+					<p><a href="tel:+917796562020">+91 7796562020</a></p>
+				  </div>
+			  </div>
+			  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				  <div class="align-self-stretch box p-4 text-center">
+					  <div class="icon d-flex align-items-center justify-content-center" style="background-color: orange; color: white; border: 20px solid orange; box-shadow: 0 0 3px 3px #ffc107; text-decoration: none; display: inline-block; border-radius: 100px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+						  <span class="icon-paper-plane" style="background-color: orange; color: white; border: 5px solid orange; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;"></span>
+					  </div>
+					  <h3 class="mb-4">Email Address</h3>
+					<p><a href="mailto:aabshaarshaikh@gmail.com">aabshaarshaikh@gmail.com</a></p>
+				  </div>
+			  </div>
+			  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				  <div class="align-self-stretch box p-4 text-center">
+					  <div class="icon d-flex align-items-center justify-content-center" style="background-color: orange; color: white; border: 20px solid orange; box-shadow: 0 0 3px 3px #ffc107; text-decoration: none; display: inline-block; border-radius: 100px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+						  <span class="icon-globe" style="background-color: orange; color: white; border: 5px solid orange; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); text-decoration: none; display: inline-block; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease, box-shadow 0.3s ease;"></span>
+					  </div>
+					  <h3 class="mb-4">Download Resume</h3>
+					<p><a href="https://drive.google.com/file/d/18pQOwEPIeIMV-Gg54zy_J4cBH-RFWMS_/view">Resume</a></p>
+				  </div>
+			  </div>
+	
+			  <!-- <div class="container">
+				<br>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					</div>
+				</div>
+					<br>
+						<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						  <li class="ftco-animate normal-txt">Find me on  </li>
+						  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+						  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
+						  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+						  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+						  <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+						</ul>
+					<br>
+			   </div> -->
+	   </div>
+	 </section>
+	
+	
+	  <!-- loader -->
+	  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	
+	
+	  <script src="js/jquery.min.js"></script>
+	  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+	  <script src="js/popper.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/jquery.easing.1.3.js"></script>
+	  <script src="js/jquery.waypoints.min.js"></script>
+	  <script src="js/jquery.stellar.min.js"></script>
+	  <script src="js/owl.carousel.min.js"></script>
+	  <script src="js/jquery.magnific-popup.min.js"></script>
+	  <script src="js/aos.js"></script>
+	  <script src="js/jquery.animateNumber.min.js"></script>
+	  <script src="js/scrollax.min.js"></script>
+	  
+	  <script src="js/main.js"></script>
+
+
+
+
+
+
+	</div>  
+  </body>
+</html>
